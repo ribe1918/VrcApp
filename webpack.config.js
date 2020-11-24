@@ -1,13 +1,16 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
-
 module.exports = {
     mode: 'development',
     entry: path.join(__dirname, 'index.tsx'),
     output: {
-        path: path.join(__dirname, '/dist'),
-        filename: 'bundle.[hash].js'
+        // publicPath: '/',
+        // path: path.join(__dirname, '/dist'),
+        // filename: 'bundle.[hash].js'
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js',
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -27,6 +30,7 @@ module.exports = {
             },
             {
                 test: /\.html$/,
+                exclude: /node_modules/,
                 use: [
                     {
                         loader: 'html-loader',
@@ -50,5 +54,6 @@ module.exports = {
         host: 'localhost',
         port: 8081,
         open: true,
+        historyApiFallback: true,
     },
 }

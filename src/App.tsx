@@ -1,15 +1,20 @@
 import React from 'react'
-
-const style: React.CSSProperties = {
-  textDecoration: 'none',
-  color: '#000',
-}
+import {
+  ColorModeProvider,
+  CSSReset,
+  theme,
+  ThemeProvider,
+} from '@chakra-ui/react'
+import ThemeToggler from './layout/ThemeToggler'
+import RootRoute from '../routes'
 
 const App: React.FC = () => {
   return (
-    <div>
-      asdf
-    </div>
+    <ThemeProvider theme={theme}>
+        <CSSReset/>
+        <ThemeToggler/>
+        <RootRoute/>
+    </ThemeProvider>
   )
 }
 export default App

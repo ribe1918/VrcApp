@@ -1,11 +1,15 @@
-import React                                    from 'react'
-import ReactDOM                                 from 'react-dom'
-import RootRoute                                from './routes'
-import DefaultLayout                            from './src/layout/DefaultLayout'
+import { ChakraProvider } from '@chakra-ui/react'
+import React, { StrictMode } from 'react'
+import ReactDOM from 'react-dom'
+import App from './src/App'
 
 ReactDOM.render(
-  <DefaultLayout>
-    <RootRoute />
-  </DefaultLayout>,
-  document.getElementById('root')
+  <>
+    <StrictMode>
+      <ChakraProvider>
+        <App/>
+      </ChakraProvider>
+    </StrictMode>
+  </>,
+  document.getElementById('root'),
 )

@@ -1,7 +1,8 @@
-import Avatar from './Avatar'
+import SpecialType from './SpecialType'
 
 declare namespace World {
-  import ReleaseStatus = Avatar.ReleaseStatus
+
+  import ReleaseStatus = SpecialType.ReleaseStatus
 
   interface World {
     name: string

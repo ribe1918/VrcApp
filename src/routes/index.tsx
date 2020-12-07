@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Auth from '../src/auth/Index'
-import NotFound from '../src/Error/NotFound'
+import Auth from './auth'
+import NotFound from '../Error/NotFound'
 
 const RootRoute: React.FC = () => {
   return (

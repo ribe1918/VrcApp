@@ -23,8 +23,9 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "public",
-    "src"
+    "public/**/*",
+    "src/**/*",
+    "src/routes/**/*"
   ],
   "exclude": [
     "node_modules"

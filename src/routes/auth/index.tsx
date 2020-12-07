@@ -1,6 +1,6 @@
 import React                                                        from 'react'
 import { Switch, RouteComponentProps, Route, Redirect, withRouter } from 'react-router-dom'
-import Login                                                        from '../../src/auth/Login'
+import Login                                                        from '../../auth/Login'
 
 const AuthRouter: React.FC<RouteComponentProps> = props => {
   const { match } = props

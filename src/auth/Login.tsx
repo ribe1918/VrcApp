@@ -45,7 +45,7 @@ const LoginForm: React.FC = () => {
             </FormControl>
             <Button
               type="submit"
-              variantColor="teal"
+              colorScheme="teal"
               variant="outline"
               width="full" mt={4}
             >

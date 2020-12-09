@@ -1,9 +1,10 @@
 {
-  "name": "ElectronBoilerplate",
+  "name": "vrc_app",
   "version": "1.0.0",
   "description": "electron boilerplate for me",
   "main": "public/main.js",
   "scripts": {
+    "react-only": "cross-env BROWSER=none SKIP_PREFLIGHT_CHECK=true yarn react-start",
     "react-start": "react-scripts start",
     "react-build": "react-scripts build",
     "react-test": "react-scripts test",
@@ -18,6 +19,7 @@
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
     "@babel/preset-react": "^7.12.7",
+    "@types/react-cookies": "^0.1.0",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "concurrently": "^5.3.0",
@@ -48,6 +50,7 @@
     "electron-is-dev": "^1.2.0",
     "framer-motion": "^2.9.5",
     "react": "^17.0.1",
+    "react-cookies": "^0.1.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
@@ -65,5 +68,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy" : "https://api.vrchat.cloud"
+  "proxy": "https://api.vrchat.cloud"
 }

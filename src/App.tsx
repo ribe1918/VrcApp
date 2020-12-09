@@ -1,6 +1,6 @@
 import React from 'react'
 import { CSSReset, theme, ThemeProvider } from '@chakra-ui/react'
-import ThemeToggler from './layout/ThemeToggler'
+import ThemeToggler from './view/layout/ThemeToggler'
 import RootRoute from './routes'
 
 const App: React.FC = () => {
@@ -10,7 +10,6 @@ const App: React.FC = () => {
       <ThemeToggler/>
       <RootRoute/>
     </ThemeProvider>
-    // <div>test</div>
   )
 }
 export default App

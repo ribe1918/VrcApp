@@ -1,6 +1,6 @@
 import React from 'react'
 import { RouteComponentProps } from 'react-router-dom'
-import AuthRouter from '../routes/auth'
+import AuthRouter from '../../routes/auth'
 
 const style: React.CSSProperties = {
   textDecoration: 'none',

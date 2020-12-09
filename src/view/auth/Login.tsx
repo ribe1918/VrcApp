@@ -8,20 +8,19 @@ import {
   Input,
   Button,
 } from '@chakra-ui/react'
-import LoginFunction from '../api/login'
+import { login } from '../../api/userAction'
 
 const LoginForm: React.FC = () => {
   const [userId, setUserId] = useState('')
   const [password, setPassword] = useState('')
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    LoginFunction(userId, password)
+    login(userId, password)
   }
 
   return (
     <Flex width="full" align="center" justifyContent="center">
-      <Box p={8} maxWidth="500px" borderWidth={2} borderRadius={8}
-           boxShadow="lg">
+      <Box p={8} maxWidth="500px" borderWidth={2} borderRadius={8} boxShadow="lg" width='400px'>
         <Box textAlign="center">
           <Heading>Login</Heading>
         </Box>

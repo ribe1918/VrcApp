@@ -7,7 +7,6 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <CSSReset/>
-      <ThemeToggler/>
       <RootRoute/>
     </ThemeProvider>
   )
